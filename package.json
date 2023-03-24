@@ -1,0 +1,37 @@
+{
+  "name": "generate-random-secure-password",
+  "version": "1.0.0",
+  "description": "Generate Random Secure Password is a library that will generate a password according to user's given options",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "lint": "eslint \"{src,test}/**/*.ts\" --fix",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EdTonatto/generate-random-secure-password-ts.git"
+  },
+  "keywords": [
+    "generate",
+    "password",
+    "random",
+    "secure"
+  ],
+  "author": "Eduardo Tonatto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EdTonatto/generate-random-secure-password-ts/issues"
+  },
+  "homepage": "https://github.com/EdTonatto/generate-random-secure-password-ts#readme",
+  "devDependencies": {
+    "@types/node": "^18.15.7",
+    "@typescript-eslint/eslint-plugin": "^5.56.0",
+    "@typescript-eslint/parser": "^5.56.0",
+    "eslint": "^8.36.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "typescript": "^5.0.2"
+  }
+}
