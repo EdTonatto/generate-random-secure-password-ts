@@ -5,5 +5,4 @@ export interface Options {
   uppercase?: boolean;
   lowercase?: boolean;
   excludeSimilarCharacters?: boolean;
-  strict?: boolean;
 }
