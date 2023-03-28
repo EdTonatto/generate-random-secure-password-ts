@@ -1,6 +1,10 @@
+/* eslint-disable no-plusplus */
 /* eslint-disable no-param-reassign */
-// eslint-disable-next-line import/no-unresolved, import/extensions
+/* eslint-disable import/extensions */
+/* eslint-disable import/no-unresolved */
+import getCharPool from './characterspool';
 import { Options } from './options';
+import getRandomNumber from './randomnumber';
 
 function generate(options: Options): string {
   // Set default values for options
@@ -20,7 +24,14 @@ function generate(options: Options): string {
   )
     options.excludeSimilarCharacters = false;
 
-  return '';
+  const charPool = getCharPool(options);
+
+  let password = '';
+  for (let i = 0; i < (options.length as number); i++) {
+    password += charPool[getRandomNumber(charPool.length)];
+  }
+
+  return password;
 }
 
 export default generate;
