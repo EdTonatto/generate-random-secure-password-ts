@@ -1,5 +1,6 @@
 /* eslint-disable import/extensions */
 /* eslint-disable import/no-unresolved */
-import getRandomNumber from './randomnumber';
+import generate from './generate';
 
-console.log(getRandomNumber(256));
+export { generate };
+export default generate;
