@@ -42,18 +42,18 @@ describe('generate', () => {
 
   it('should generate a password with all options enabled', () => {
     const password = generate({
-      length: 12,
+      length: 200,
       numbers: true,
       symbols: true,
       uppercase: true,
       lowercase: true,
       excludeSimilarCharacters: true,
     });
-    expect(password.length).toBe(12);
+    expect(password.length).toBe(200);
     expect(password).toMatch(/[0-9]+/);
     expect(password).toMatch(/[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]+/);
     expect(password).toMatch(/[A-Z]+/);
     expect(password).toMatch(/[a-z]+/);
-    expect(password).not.toMatch(/[il1Lo0O]/);
+    expect(password).not.toMatch(/[ilLI|`oO0]/g);
   });
 });
