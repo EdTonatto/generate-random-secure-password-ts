@@ -1,6 +1,6 @@
 {
   "name": "generate-random-secure-password",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Generate Random Secure Password is a library that will generate a password according to user's given options",
   "main": "index.js",
   "scripts": {
