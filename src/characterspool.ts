@@ -17,7 +17,7 @@ function getCharPool(options: Options): string {
 
   if (!pool)
     throw new Error(
-      'No characters selected. Select at leat one rule to the character pool.',
+      'No characters selected. Select at least one rule to the character pool.',
     );
 
   if (options.excludeSimilarCharacters)
