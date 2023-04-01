@@ -16,28 +16,28 @@ describe('generate', () => {
   });
 
   it('should generate a password with numbers', () => {
-    const password = generate({ numbers: true });
+    const password = generate({ numbers: true, lowercase: false, uppercase: false });
     expect(password).toMatch(/[0-9]+/);
   });
 
   it('should generate a password with symbols', () => {
-    const password = generate({ symbols: true });
-    expect(password).toMatch(/[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?]+/);
+    const password = generate({ symbols: true, lowercase: false, uppercase: false });
+    expect(password).toMatch(/[\\!@#$%^&*(){}[\]/.,><]/g);
   });
 
   it('should generate a password with uppercase letters', () => {
-    const password = generate({ uppercase: true });
+    const password = generate({ uppercase: true, length: 30 });
     expect(password).toMatch(/[A-Z]+/);
   });
 
   it('should generate a password with lowercase letters', () => {
-    const password = generate({ lowercase: true });
+    const password = generate({ lowercase: true, length: 30 });
     expect(password).toMatch(/[a-z]+/);
   });
 
   it('should exclude similar characters', () => {
     const password = generate({ excludeSimilarCharacters: true });
-    expect(password).not.toMatch(/[il1Lo0O]/);
+    expect(password).not.toMatch(/[ilLI|`oO0]/g);
   });
 
   it('should generate a password with all options enabled', () => {
