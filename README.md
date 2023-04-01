@@ -32,11 +32,12 @@ passwordGenerator.generate(options);
 
 The `options` parameter is an object that contains the following properties:
 
-- `length`: the length of the password (default is `12`)
-- `numbers`: whether to include numbers in the password (default is `true`)
-- `symbols`: whether to include symbols in the password (default is `true`)
+- `length`: the length of the password (default is `8`)
+- `numbers`: whether to include numbers in the password (default is `false`)
+- `symbols`: whether to include symbols in the password (default is `false`)
 - `lowercase`: whether to include lowercase letters in the password (default is `true`)
 - `uppercase`: whether to include uppercase letters in the password (default is `true`)
+- `excludeSimilarCharacters`: wheter to exclude similar characters in the password (default is `false`)
 
 Here is an example usage:
 
@@ -52,7 +53,7 @@ const options = {
 };
 
 const password = passwordGenerator.generate(options);
-console.log(password); // Example output: "iL9%Zp6#G4@oE2v"
+console.log(password); // Example output: "iL9%Zp6#G4@oE2vJ"
 ```
 
 ## Development
@@ -62,7 +63,7 @@ If you want to develop or contribute to this project, you can clone the reposito
 ```bash
 npm install # or yarn install
 npm run build # or yarn build
-npm test # or yarn test
+npm run test # or yarn test
 ```
 
 This will install the necessary dependencies, build the project, and run the tests. 
