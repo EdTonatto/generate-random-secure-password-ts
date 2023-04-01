@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/generate-random-secure-password.svg)](https://badge.fury.io/js/generate-random-secure-password)
+[![codecov](https://codecov.io/gh/EdTonatto/generate-random-secure-password-ts/branch/main/graph/badge.svg?token=LXI45Q9YTU)](https://codecov.io/gh/EdTonatto/generate-random-secure-password-ts)
 # Generate Random Secure Password
 
 Generate Random Secure Password is a library that generates secure passwords according to user's given options. 
