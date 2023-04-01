@@ -8,7 +8,6 @@ import getRandomNumber from './randomnumber';
 
 function generate(options: Options): string {
   // Set default values for options
-  options = options || {};
   if (!Object.prototype.hasOwnProperty.call(options, 'length'))
     options.length = 8;
   if (!Object.prototype.hasOwnProperty.call(options, 'numbers'))
