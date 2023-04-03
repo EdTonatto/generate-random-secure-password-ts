@@ -1,8 +1,12 @@
 {
   "name": "generate-random-secure-password",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Generate Random Secure Password is a library that will generate a password according to user's given options",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "scripts": {
     "build": "tsc --build",
     "start": "ts-node src/index.ts",
@@ -16,6 +20,7 @@
   },
   "keywords": [
     "generate",
+    "generator",
     "password",
     "random",
     "secure"
