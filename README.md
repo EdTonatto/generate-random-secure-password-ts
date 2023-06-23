@@ -2,6 +2,7 @@
 [![codecov](https://codecov.io/gh/EdTonatto/generate-random-secure-password-ts/branch/main/graph/badge.svg?token=LXI45Q9YTU)](https://codecov.io/gh/EdTonatto/generate-random-secure-password-ts)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/665c0d8b733141e5bb11f6df4fc5ff7e)](https://app.codacy.com/gh/EdTonatto/generate-random-secure-password-ts/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![CI](https://github.com/EdTonatto/generate-random-secure-password-ts/actions/workflows/ci.js.yml/badge.svg)](https://github.com/EdTonatto/generate-random-secure-password-ts/actions/workflows/ci.js.yml)
+[![License](https://img.shields.io/github/license/EdTonatto/generate-random-secure-password-ts.svg)](https://github.com/EdTonatto/generate-random-secure-password-ts/blob/main/LICENSE)
 
 
 
